@@ -1,23 +1,81 @@
+<script>
+import NavBar from '@/components/NavBar';
+import Hero from '@/components/Hero';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+
+  export default{
+    name: 'app',
+    components: {
+      NavBar,
+      Hero,
+      Contact,
+      Footer
+    },
+  }
+</script>
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <Nav-bar/>
+    <main>
+        <hero/>
+        <Contact email="bremy@hotmail.com" tel="0637670123"/>
+    </main>
+    <Footer/>
   </div>
 </template>
 
-<script>
+<style lang="scss">
+body {
+  margin: 0;
+  color: #000;
 
-export default {
-  name: 'App'
-}
-</script>
+  #app {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(12px, 1vw, 16px);
+  }
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  main {
+    display: grid;
+    gap: 2rem;
+
+    width: clamp(320px, 80%, 1440px);
+    margin: 4rem auto;
+  }
 }
+
+h1 {
+  font-family: Oswald, sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+
+  &:not(.word-mark,.hamburger-menu)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+    height: 1px;
+  }
+
+  &:hover::after{
+    width: 100%;
+  }
+}
+
+.red-underline {
+  border-bottom: .25em solid #FF1616;
+}
+
 </style>
