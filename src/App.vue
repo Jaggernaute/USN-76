@@ -7,18 +7,18 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import News from "@/components/News";
 
-  export default{
-    name: 'App',
-    components: {
-      News,
-      NavBar,
-      Hero,
-      Prices,
-      Teams,
-      Contact,
-      Footer
-    },
-  }
+export default {
+  name: 'App',
+  components: {
+    News,
+    NavBar,
+    Hero,
+    Prices,
+    Teams,
+    Contact,
+    Footer
+  },
+}
 </script>
 
 <template>
@@ -82,7 +82,7 @@ a {
     height: 1px;
   }
 
-  &.underline:hover::after{
+  &.underline:hover::after {
     width: 100%;
   }
 }

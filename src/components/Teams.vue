@@ -10,7 +10,7 @@
 </template>
 
 <style scoped>
-ul{
+ul {
   list-style: none;
 }
 </style>

@@ -93,17 +93,17 @@ img {
   overflow: hidden;
 
   &::after {
-     content: 'Notre équipe';
-     color: white;
-     position: absolute;
-     inset: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 2rem;
-     font-weight: bold;
-     transform: translateY(100%);
-     transition: transform 0.5s;
+    content: 'Notre équipe';
+    color: white;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transform: translateY(100%);
+    transition: transform 0.5s;
   }
 
   &:hover::after {
