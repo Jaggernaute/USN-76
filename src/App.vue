@@ -1,6 +1,8 @@
 <script>
 import NavBar from '@/components/NavBar';
 import Hero from '@/components/Hero';
+import Teams from '@/components/Teams';
+import Prices from '@/components/Prices';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import News from "@/components/News";
@@ -11,6 +13,8 @@ import News from "@/components/News";
       News,
       NavBar,
       Hero,
+      Prices,
+      Teams,
       Contact,
       Footer
     },
@@ -22,6 +26,8 @@ import News from "@/components/News";
     <Nav-bar/>
     <main>
         <hero/>
+        <teams/>
+        <prices/>
         <Contact email="bremy@hotmail.com" tel="0637670123"/>
 
         <div>
