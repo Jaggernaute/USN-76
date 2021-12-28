@@ -58,7 +58,7 @@ a {
   text-decoration: none;
   position: relative;
 
-  &:not(.word-mark,.hamburger-menu)::after {
+  &.underline::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -69,7 +69,7 @@ a {
     height: 1px;
   }
 
-  &:hover::after{
+  &.underline:hover::after{
     width: 100%;
   }
 }

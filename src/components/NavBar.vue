@@ -4,19 +4,19 @@
       <nav :class="{'hamburger-open': isOpen}">
         <ul>
           <li>
-            <a href="">Accueil</a>
+            <a class="underline" href="">Accueil</a>
           </li>
           <li>
-            <a href="">Equipe</a>
+            <a class="underline" href="">Equipe</a>
           </li>
           <li>
-            <a href="">Actus</a>
+            <a class="underline" href="">Actus</a>
           </li>
           <li>
-            <a href="">Tarifs</a>
+            <a class="underline" href="">Tarifs</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a class="underline" href="">Contact</a>
           </li>
         </ul>
       </nav>

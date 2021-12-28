@@ -10,12 +10,12 @@ export default {
     <h1>C<span class="red-underline">ontac</span>t</h1>
     <div class="contact-wrapper">
       <p class="mail">
-        <a v-bind:href="'mailto:' + email">
+        <a class="underline" v-bind:href="'mailto:' + email">
           {{ email }}
         </a>
       </p>
       <p class="phone">
-        <a v-bind:href="'tel:' + tel">
+        <a class="underline" v-bind:href="'tel:' + tel">
           {{ tel }}
         </a>
       </p>
