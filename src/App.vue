@@ -3,10 +3,12 @@ import NavBar from '@/components/NavBar';
 import Hero from '@/components/Hero';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import News from "@/components/News";
 
   export default{
     name: 'app',
     components: {
+      News,
       NavBar,
       Hero,
       Contact,
@@ -21,6 +23,10 @@ import Footer from '@/components/Footer';
     <main>
         <hero/>
         <Contact email="bremy@hotmail.com" tel="0637670123"/>
+
+        <div>
+          <News/>
+        </div>
     </main>
     <Footer/>
   </div>
