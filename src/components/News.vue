@@ -15,7 +15,12 @@ export default {
 </script>
 
 <style scoped>
-   h1 {
-     text-align: right;
-   }
+.news {
+  display: grid;
+  place-content: flex-end;
+}
+
+h1 {
+  text-align: right;
+}
 </style>

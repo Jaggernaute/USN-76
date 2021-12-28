@@ -91,4 +91,16 @@ a {
   border-bottom: .25em solid #FF1616;
 }
 
+.info {
+  display: flex;
+  gap: 2em;
+
+  .news {
+    width: clamp(340px, 50%, 640px);
+  }
+
+  .right {
+    flex-grow: 1;
+  }
+}
 </style>
