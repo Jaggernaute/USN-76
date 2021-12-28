@@ -42,12 +42,14 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  gap: 1rem;
 
   &-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 
     p {
       margin: 0.5em;
