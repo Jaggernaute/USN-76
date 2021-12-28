@@ -25,14 +25,15 @@ import News from "@/components/News";
   <div id="app">
     <Nav-bar/>
     <main>
-        <hero/>
-        <teams/>
-        <prices/>
-        <Contact email="bremy@hotmail.com" tel="0637670123"/>
-
-        <div>
-          <News/>
+      <hero/>
+      <div class="info">
+        <News/>
+        <div class="right">
+          <teams/>
+          <prices/>
         </div>
+      </div>
+      <Contact email="bremy@hotmail.com" tel="0637670123"/>
     </main>
     <Footer/>
   </div>
