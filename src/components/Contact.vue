@@ -1,7 +1,17 @@
 <script>
 
 export default {
-  props: ['email', 'tel']
+  name: "Contact",
+  props: {
+    email: {
+      type: String,
+      required: true
+    },
+    tel: {
+      type: String,
+      required: true
+    },
+  }
 }
 </script>
 

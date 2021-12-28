@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import News from "@/components/News";
 
   export default{
-    name: 'app',
+    name: 'App',
     components: {
       News,
       NavBar,

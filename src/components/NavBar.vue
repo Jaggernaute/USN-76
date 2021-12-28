@@ -184,6 +184,7 @@ nav {
 
 <script>
 export default {
+  name: 'NavBar',
   data() {
     return {
       isOpen: false

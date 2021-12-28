@@ -132,3 +132,8 @@ img {
   }
 }
 </style>
+<script>
+export default {
+  name: 'Hero'
+}
+</script>
