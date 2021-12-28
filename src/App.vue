@@ -33,7 +33,7 @@ export default {
           <prices/>
         </div>
       </div>
-      <Contact email="bremy@hotmail.com" tel="0637670123"/>
+      <Contact email="bremy@hotmail.com" tel="0769183925"/>
     </main>
     <Footer/>
   </div>
@@ -82,7 +82,7 @@ a {
     height: 1px;
   }
 
-  &.underline:hover::after {
+  &.underline:hover::after{
     width: 100%;
   }
 }
