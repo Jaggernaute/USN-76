@@ -37,8 +37,12 @@
       </div>
       <p>E<span class="red-underline">nsemble</span> pour aller plus loin</p>
       <div class="partners">
-        <img src="../assets/partner0.png" alt="Logo du district de football de Seine-Maritime">
-        <img src="../assets/partner1.png" alt="logo de la ligne de football de Normandie">
+        <a href="https://dfsm.fff.fr/" target="_blank">
+          <img src="../assets/partner0.png" alt="Logo du district de football de Seine-Maritime">
+        </a>
+        <a href="https://normandie.fff.fr/" target="_blank">
+          <img src="../assets/partner1.png" alt="logo de la ligne de football de Normandie">
+        </a>
       </div>
     </div>
   </div>
