@@ -192,6 +192,7 @@ nav {
 
 #theme-btn {
   display: flex;
+  cursor: pointer;
 
   img {
     width: 1.2rem;
