@@ -66,7 +66,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 4vh;
+    gap: 4vw;
 
     li {
       list-style: none;
