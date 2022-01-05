@@ -40,23 +40,20 @@ export default {
 </template>
 
 <style lang="scss">
-:root {
-  @media (prefers-color-scheme: dark) {
-    --background-color: #000;
-    --text-color: #fff;
-    --accent-color: #FF1616;
+[data-theme="dark"] {
+  --background-color: #000;
+  --text-color: #fff;
+  --accent-color: #FF1616;
 
-    --box-shadow-color: rgba(255, 255, 255, 0.1);
-  }
+  --box-shadow-color: #FF161622;
+}
 
-  @media (prefers-color-scheme: light) {
-    --background-color: #fff;
-    --text-color: #000;
-    --accent-color: #FF1616;
+[data-theme="light"]{
+  --background-color: #fff;
+  --text-color: #000;
+  --accent-color: #FF1616;
 
-    --box-shadow-color: rgba(0, 0, 0, 0.1);
-  }
-
+  --box-shadow-color: #0002;
 }
 
 

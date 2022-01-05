@@ -18,6 +18,12 @@
           <li>
             <a class="underline" href="">Contact</a>
           </li>
+          <li>
+            <a id="theme-btn" @click="changeTheme()">
+              <img v-if="this.dark" src="../assets/sun.svg" alt="Changer de thème">
+              <img v-if="!this.dark" src="../assets/moon.svg" alt="Changer de thème">
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -167,7 +173,7 @@ nav {
 @media only screen and (min-width: 640px) {
   header {
     width: 100%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem var(--box-shadow-color);
   }
 
   .hamburger-menu {
@@ -184,6 +190,14 @@ nav {
   }
 }
 
+#theme-btn {
+  display: flex;
+
+  img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
 </style>
 
 <script>
@@ -191,10 +205,21 @@ export default {
   name: 'NavBar',
   data() {
     return {
-      isOpen: false
+      isOpen: false,
+      dark: false
     }
   },
   methods: {
+    changeTheme() {
+      this.dark = !this.dark;
+
+      if (this.dark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    },
     toggleMenu() {
       this.isOpen = !this.isOpen;
     }
