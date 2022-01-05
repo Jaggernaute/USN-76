@@ -15,8 +15,9 @@ export default {
 </script>
 
 <style scoped>
-
-h1 {
-  text-align: right;
+@media (min-width: 794px) {
+  h1 {
+    text-align: right;
+  }
 }
 </style>

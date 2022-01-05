@@ -93,14 +93,21 @@ a {
 
 .info {
   display: flex;
+  flex-direction: column;
   gap: 2em;
+}
 
-  .news {
-    width: clamp(340px, 50%, 640px);
-  }
+@media (min-width: 794px) {
+  .info {
+    flex-direction: row;
+    .news {
+      width: clamp(340px, 50%, 640px);
+    }
 
-  .right {
-    flex-grow: 1;
+    .right {
+      flex-grow: 1;
+    }
   }
 }
+
 </style>

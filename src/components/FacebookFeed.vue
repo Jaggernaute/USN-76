@@ -8,13 +8,15 @@ export default {
   name: "FacebookFeed"
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 iframe {
   border:none;
   overflow:scroll;
   width: 340px;
   aspect-ratio: 3/4;
-  float: right;
-  clear: both;
+  @media (min-width: 794px) {
+    float: right;
+    clear: both;
+  }
 }
 </style>
