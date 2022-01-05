@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 footer {
-  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -0.5rem 1rem var(--box-shadow-color);
   padding: 20px;
 }
 

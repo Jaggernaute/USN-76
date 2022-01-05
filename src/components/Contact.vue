@@ -55,7 +55,7 @@ export default {
       margin: 0.5em;
 
       a {
-        color: #000;
+        color: var(--text-color);
         text-decoration: none;
       }
     }
