@@ -131,4 +131,7 @@ a {
   }
 }
 
+button {
+  z-index: -1 !important;
+}
 </style>
