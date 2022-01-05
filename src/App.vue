@@ -40,9 +40,30 @@ export default {
 </template>
 
 <style lang="scss">
+:root {
+  @media (prefers-color-scheme: dark) {
+    --background-color: #000;
+    --text-color: #fff;
+    --accent-color: #FF1616;
+
+    --box-shadow-color: rgba(255, 255, 255, 0.1);
+  }
+
+  @media (prefers-color-scheme: light) {
+    --background-color: #fff;
+    --text-color: #000;
+    --accent-color: #FF1616;
+
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+
 body {
   margin: 0;
-  color: #000;
+  background-color: var(--background-color);
+  color: var(--text-color);
 
   #app {
     font-family: 'Poppins', sans-serif;
@@ -78,7 +99,7 @@ a {
     left: 0;
     width: 0;
     transition: all 0.3s ease-in-out;
-    background-color: #000;
+    background-color: var(--text-color);
     height: 1px;
   }
 
@@ -88,7 +109,7 @@ a {
 }
 
 .red-underline {
-  border-bottom: .25em solid #FF1616;
+  border-bottom: .25em solid var(--accent-color);
 }
 
 .info {

@@ -45,7 +45,7 @@
 
 <style lang="scss" scoped>
 header {
-  background-color: #fff;
+  background-color: var(--background-color);
   position: fixed;
   width: 100%;
   top: 0;
@@ -85,8 +85,8 @@ nav {
 @media only screen and (max-width: 639px) {
   nav {
     position: fixed;
-    box-shadow: 0.5rem 0 0 rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    box-shadow: 0.5rem 0 0 var(--box-shadow-color);
+    background-color: var(--background-color);
 
     top: 4rem;
     width: 100%;
@@ -116,10 +116,10 @@ nav {
     align-items: center;
 
     position: relative;
-    background-color: #fff;
+    background-color: var(--background-color);
     height: 4rem;
 
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem var(--box-shadow-color);
     padding: 0 20px;
   }
 
@@ -130,6 +130,7 @@ nav {
     cursor: pointer;
 
     svg g {
+      fill: var(--text-color);
       transition: all 0.3s ease;
 
       path {
