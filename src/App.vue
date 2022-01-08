@@ -1,5 +1,5 @@
 <script>
-import NavBar from '@/components/NavBar';
+import NavBar from '@/components/Header';
 import Hero from '@/components/Hero';
 import Teams from '@/components/Teams';
 import Prices from '@/components/Prices';
