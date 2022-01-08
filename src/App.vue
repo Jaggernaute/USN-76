@@ -40,22 +40,6 @@ export default {
 </template>
 
 <style lang="scss">
-[data-theme="dark"] {
-  --background-color: #000;
-  --text-color: #fff;
-  --accent-color: #FF1616;
-
-  --box-shadow-color: #FF161622;
-}
-
-[data-theme="light"]{
-  --background-color: #fff;
-  --text-color: #000;
-  --accent-color: #FF1616;
-
-  --box-shadow-color: #0002;
-}
-
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background-color: #000;
@@ -74,6 +58,22 @@ export default {
 
 		--box-shadow-color: #0002;
 	}
+}
+
+[data-theme="dark"] {
+	--background-color: #000;
+	--text-color: #fff;
+	--accent-color: #FF1616;
+
+	--box-shadow-color: #FF161622;
+}
+
+[data-theme="light"]{
+	--background-color: #fff;
+	--text-color: #000;
+	--accent-color: #FF1616;
+
+	--box-shadow-color: #0002;
 }
 
 
