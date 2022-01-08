@@ -207,7 +207,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      dark: false
+      dark: window.matchMedia('(prefers-color-scheme: dark)').matches
     }
   },
   methods: {
