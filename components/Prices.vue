@@ -1,5 +1,5 @@
 <template>
-  <div class="prices">
+  <div id="tarifs" class="prices">
   <h1><span class="red-underline">Les tar</span>ifs</h1>
 
   <div class="container">

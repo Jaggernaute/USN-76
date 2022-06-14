@@ -1,38 +1,38 @@
 <template>
   <header>
     <div class="header-container">
-      <nav :class="{'hamburger-open': isOpen}">
+      <nav :class="{'hamburger-open': isOpen}" @click="closeMenu()">
         <ul>
           <li>
-            <a class="underline" href="">Accueil</a>
+            <a class="underline" href="/#">Accueil</a>
           </li>
           <li>
-            <a class="underline" href="">Equipe</a>
+            <a class="underline" href="/#equipe">Equipe</a>
           </li>
           <li>
-            <a class="underline" href="">Actus</a>
+            <a class="underline" href="/#actus">Actus</a>
           </li>
           <li>
-            <a class="underline" href="">Tarifs</a>
+            <a class="underline" href="/#tarifs">Tarifs</a>
           </li>
           <li>
-            <a class="underline" href="">Contact</a>
+            <a class="underline" href="/#contact">Contact</a>
           </li>
           <li>
-            <a id="theme-btn" @click="changeTheme()">
+            <div id="theme-btn" @click="changeTheme()">
               <img v-if="this.dark" src="../assets/sun.svg" alt="Changer de thème">
-              <img v-if="!this.dark" src="../assets/moon.svg" alt="Changer de thème">
-            </a>
+              <img v-else src="../assets/moon.svg" alt="Changer de thème">
+            </div>
           </li>
         </ul>
       </nav>
 
       <div class="mobile-header">
-        <a class="word-mark">
-          <img src="../assets/logo.png" alt="The logo of USN76 football club.">
+        <a href="#" class="word-mark">
+          <img src="~/assets/logo.webp" alt="The logo of USN76 football club.">
           USN76
         </a>
-        <a class="hamburger-menu" @click="toggleMenu()" :class="{ 'rotated' : isOpen }">
+        <div class="hamburger-menu" @click="toggleMenu()" :class="{ 'rotated' : isOpen }">
           <svg width="32" height="27" viewBox="0 0 32 27" xmlns="http://www.w3.org/2000/svg">
             <g fill="black">
               <path
@@ -43,7 +43,7 @@
                   d="M0 25.5C0 24.6716 0.671573 24 1.5 24H30.5C31.3284 24 32 24.6716 32 25.5V25.5C32 26.3284 31.3284 27 30.5 27H1.5C0.671573 27 0 26.3284 0 25.5V25.5Z"/>
             </g>
           </svg>
-        </a>
+        </div>
       </div>
     </div>
   </header>
@@ -223,7 +223,10 @@ export default {
     },
     toggleMenu() {
       this.isOpen = !this.isOpen;
-    }
+    },
+	  closeMenu() {
+			this.isOpen = false;
+	  }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
+<Html lang='fr'>
 	<Head>
-
 		<Meta name="language" content="fr-FR" />
 		<Meta name="author" content="Jaggernaute"/>
 		<Meta name="description"
@@ -55,24 +55,26 @@
 		      content="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.6435-0/p480x480/119037958_3210507175670134_232499023177774034_n.png?_nc_cat=104&ccb=1-3&_nc_sid=e3f864&_nc_ohc=Wpyvke9Lw4IAX8uTTpu&_nc_ht=scontent-mrs2-1.xx&tp=30&oh=fdc97dfff748c5da86fe5357eaa9b9fe&oe=60CCECD6"/>
 		<Title>USN 76 - Club de foot de commune des villes soeurs région normandie</Title>
 	</Head>
-	
-  <div id="app">
-	  <client-only>
-		  <Header/>
-	  </client-only>
-    <main>
-      <hero/>
-      <div class="info">
-        <News/>
-        <div class="right">
-          <teams/>
-          <prices/>
-        </div>
-      </div>
-      <Contact email="bremy@hotmail.com" tel="0769183925"/>
-    </main>
-    <Footer/>
-  </div>
+	<Body>
+		<div id="app">
+			<client-only>
+				<Header/>
+			</client-only>
+			<main>
+				<hero/>
+				<div class="info">
+					<News/>
+					<div class="right">
+						<teams/>
+						<prices/>
+					</div>
+				</div>
+				<Contact email="bremy@hotmail.com" tel="0769183925"/>
+			</main>
+			<Footer/>
+		</div>
+	</Body>
+</Html>
 </template>
 
 <style lang="scss">
@@ -96,6 +98,10 @@
 	}
 }
 
+:root {
+	scroll-behavior: smooth;
+}
+
 [data-theme="dark"] {
 	--background-color: #000;
 	--text-color: #fff;
@@ -110,6 +116,10 @@
 	--accent-color: #FF1616;
 
 	--box-shadow-color: #0002;
+}
+
+#actus, #contact, #equipe, #tarifs {
+	scroll-margin: 100px;
 }
 
 

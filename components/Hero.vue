@@ -33,15 +33,15 @@
     </div>
     <div class="right">
       <div class="zoom">
-        <img src="../assets/team.png" alt="L'équipe de football de USN76 à Eu.">
+        <img src="~/assets/team.webp" alt="L'équipe de football de USN76 à Eu.">
       </div>
       <p>E<span class="red-underline">nsemble</span> pour aller plus loin</p>
       <div class="partners">
         <a href="https://dfsm.fff.fr/" target="_blank">
-          <img src="../assets/partner0.png" alt="Logo du district de football de Seine-Maritime">
+          <img src="~/assets/partner0.webp" alt="Logo du district de football de Seine-Maritime">
         </a>
         <a href="https://normandie.fff.fr/" target="_blank">
-          <img src="../assets/partner1.png" alt="logo de la ligne de football de Normandie">
+          <img src="~/assets/partner1.webp" alt="logo de la ligne de football de Normandie">
         </a>
       </div>
     </div>
@@ -57,7 +57,7 @@
     position: absolute;
     inset: 0;
 
-	  background-image: url("~/assets/baballe.png");
+	  background-image: url('~assets/baballe.webp');
     background-size: min(69%, 42vw, 280px);
     background-position: center;
     background-repeat: no-repeat;

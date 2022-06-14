@@ -1,5 +1,5 @@
 <template>
-  <div class="teams">
+  <div id="equipe" class="teams">
     <h1><span class="red-underline">Les éq</span>uipes</h1>
     <ul class="teams-list">
       <li>2 équipes de séniors masculines</li>
