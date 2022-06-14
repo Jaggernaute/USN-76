@@ -1,29 +1,65 @@
-<script>
-import NavBar from '@/components/Header';
-import Hero from '@/components/Hero';
-import Teams from '@/components/Teams';
-import Prices from '@/components/Prices';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
-import News from "@/components/News";
-
-export default {
-  name: 'App',
-  components: {
-    News,
-    NavBar,
-    Hero,
-    Prices,
-    Teams,
-    Contact,
-    Footer
-  },
-}
-</script>
-
 <template>
+	<Head>
+
+		<Meta name="language" content="fr-FR" />
+		<Meta name="author" content="Jaggernaute"/>
+		<Meta name="description"
+		      content="L'USN76 est un club de foot basé sur la communauté de commune des villes soeurs région normandie, avec des équipes allant de la U7 au senior en passant par l'équipe feminine."/>
+		<Meta name="keywords" content="Foot, foot normandie, foot villes soeurs, foot district de normandie, USN76"/>
+
+		<!-- for the robot -->
+		<Meta name="robots" content="index,follow"/>
+		<Meta name="googlebot" content="index,follow"/>
+		<Meta name="google" content="nositelinkssearchbox"/>
+		<Meta name="google" content="notranslate"/>
+
+		<!-- Géo-tags-->
+		<Meta name="geo.region" content="FR-76" />
+		<Meta name="geo.placename" content="Le Mesnil-R&eacute;aume" />
+		<Meta name="geo.position" content="49.97074;1.446716" />
+		<Meta name="ICBM" content="49.97074, 1.446716" />
+
+
+		<!-- Facebook Open Graph markup -->
+		<Meta property="og:locale" content="fr_FR" />
+		<Meta property="og:url" content="" />
+		<Meta property="og:type" content="website" />
+		<Meta property="og:title" content="USN76 équipe de foot sur les villes soeurs" />
+		<Meta name="og:email" content=""/>
+		<Meta property="og:description"
+		      content="L'USN76 est un club de foot basé sur la communauté de commune des villes soeurs région normandie, avec des équipes allant de la U7 au senior en passant par l'équipe feminine."/>
+		<Meta property="og:image"
+		      content="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.6435-0/p480x480/119037958_3210507175670134_232499023177774034_n.png?_nc_cat=104&ccb=1-3&_nc_sid=e3f864&_nc_ohc=Wpyvke9Lw4IAX8uTTpu&_nc_ht=scontent-mrs2-1.xx&tp=30&oh=fdc97dfff748c5da86fe5357eaa9b9fe&oe=60CCECD6"/>
+
+		<Meta name="language" content="fr-FR"/>
+		<Meta name="author" content="Jaggernaute"/>
+		<Meta name="description"
+		      content="L'USN76 est un club de foot basé sur la communauté de commune des villes soeurs région normandie, avec des équipes allant de la U7 au senior en passant par l'équipe feminine."/>
+		<Meta name="keywords" content="Foot, foot normandie, foot villes soeurs, foot district de normandie, USN76"/>
+
+		<!-- for the robot -->
+		<Meta name="robots" content="index,follow"/>
+		<Meta name="googlebot" content="index,follow"/>
+		<Meta name="google" content="nositelinkssearchbox"/>
+		<Meta name="google" content="notranslate"/>
+
+		<!-- Facebook Open Graph markup -->
+		<Meta property="og:locale" content="fr_FR"/>
+		<Meta property="og:url" content=""/>
+		<Meta property="og:type" content="website"/>
+		<Meta property="og:title" content="USN76 équipe de foot sur les villes soeurs"/>
+		<Meta name="og:email" content=""/> <!--TODO add email address -->
+		<Meta property="og:description"
+		      content="L'USN76 est un club de foot basé sur la communauté de commune des villes soeurs région normandie, avec des équipes allant de la U7 au senior en passant par l'équipe feminine."/>
+		<Meta property="og:image"
+		      content="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.6435-0/p480x480/119037958_3210507175670134_232499023177774034_n.png?_nc_cat=104&ccb=1-3&_nc_sid=e3f864&_nc_ohc=Wpyvke9Lw4IAX8uTTpu&_nc_ht=scontent-mrs2-1.xx&tp=30&oh=fdc97dfff748c5da86fe5357eaa9b9fe&oe=60CCECD6"/>
+		<Title>USN 76 - Club de foot de commune des villes soeurs région normandie</Title>
+	</Head>
+	
   <div id="app">
-    <Nav-bar/>
+	  <client-only>
+		  <Header/>
+	  </client-only>
     <main>
       <hero/>
       <div class="info">

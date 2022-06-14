@@ -47,6 +47,7 @@
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .left {
   position: relative;
@@ -56,7 +57,7 @@
     position: absolute;
     inset: 0;
 
-    background-image: url(../assets/baballe.png);
+	  background-image: url("~/assets/baballe.png");
     background-size: min(69%, 42vw, 280px);
     background-position: center;
     background-repeat: no-repeat;
@@ -132,8 +133,3 @@ img {
   }
 }
 </style>
-<script>
-export default {
-  name: 'Hero'
-}
-</script>

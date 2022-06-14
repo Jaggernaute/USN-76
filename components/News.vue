@@ -5,15 +5,6 @@
   </div>
 </template>
 
-<script>
-import FacebookFeed from "@/components/FacebookFeed";
-
-export default {
-  name: "News",
-  components: {FacebookFeed}
-}
-</script>
-
 <style scoped>
 @media (min-width: 794px) {
   h1 {
