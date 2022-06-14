@@ -33,7 +33,7 @@
     </div>
     <div class="right">
       <div class="zoom">
-        <img src="~/assets/team.webp" alt="L'équipe de football de USN76 à Eu.">
+        <img height="427" width="828"  src="~/assets/team.webp" alt="L'équipe de football de USN76 à Eu.">
       </div>
       <p>E<span class="red-underline">nsemble</span> pour aller plus loin</p>
       <div class="partners">
@@ -77,6 +77,7 @@
 
 img {
   width: 100%;
+	height: 100%;
 }
 
 .partners {
