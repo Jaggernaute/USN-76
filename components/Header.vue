@@ -110,8 +110,7 @@ nav {
     transform: translateX(calc(-100% - .5rem));
     transition: transform 0.3s ease-in-out;
 
-    &.hamburger-open,
-    &:focus-within {
+    &.hamburger-open {
       transform: translateX(0);
     }
   }
