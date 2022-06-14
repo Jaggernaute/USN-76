@@ -20,8 +20,8 @@
           </li>
           <li>
             <div id="theme-btn" @click="changeTheme()">
-              <img v-if="this.dark" src="../assets/sun.svg" alt="Changer de thème">
-              <img v-else src="../assets/moon.svg" alt="Changer de thème">
+              <img v-if="this.dark" src="~/assets/sun.svg" alt="Changer de thème">
+              <img v-else src="~/assets/moon.svg" alt="Changer de thème">
             </div>
           </li>
         </ul>

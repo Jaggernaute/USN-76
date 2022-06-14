@@ -57,7 +57,7 @@
     position: absolute;
     inset: 0;
 
-	  background-image: url('~assets/baballe.webp');
+	  background-image: url("~/assets/baballe.webp");
     background-size: min(69%, 42vw, 280px);
     background-position: center;
     background-repeat: no-repeat;
