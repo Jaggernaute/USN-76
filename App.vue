@@ -57,9 +57,7 @@
 	</Head>
 	<Body>
 		<div id="app">
-			<client-only>
-				<Header/>
-			</client-only>
+			<Header/>
 			<main>
 				<hero/>
 				<div class="info">

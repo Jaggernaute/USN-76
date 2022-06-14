@@ -20,7 +20,7 @@
           </li>
           <li>
             <div id="theme-btn" @click="changeTheme()">
-              <img v-if="this.dark" src="~/assets/sun.svg" alt="Changer de thème">
+              <img v-if="dark" src="~/assets/sun.svg" alt="Changer de thème">
               <img v-else src="~/assets/moon.svg" alt="Changer de thème">
             </div>
           </li>
@@ -206,10 +206,13 @@ export default {
   data() {
     return {
       isOpen: false,
-      dark: window.matchMedia('(prefers-color-scheme: dark)').matches
+      dark: false
     }
   },
-  methods: {
+	mounted() {
+		this.dark = window.matchMedia('(prefers-color-scheme: dark)').matches
+	},
+	methods: {
     changeTheme() {
       this.dark = !this.dark;
 
